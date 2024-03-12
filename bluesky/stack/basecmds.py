@@ -355,6 +355,7 @@ def initbasecmds():
             "Get info on aircraft, airport or waypoint",
         ],
         "QUIT": ["QUIT", "", bs.sim.stop, "Quit program/Stop simulation"],
+        "RADARLOVE": ["RADARLOW", "", singradarlove, "Sing"],
         "REALTIME": [
             "REALTIME [ON/OFF]",
             "[bool]",
@@ -466,6 +467,10 @@ def initbasecmds():
 
 def singbluesky():
     webbrowser.open_new("https://youtu.be/aQUlA8Hcv4s")
+    return True
+
+def singradarlove():
+    webbrowser.open_new("https://youtu.be/aRlSHG5hRY4")
     return True
 
 
